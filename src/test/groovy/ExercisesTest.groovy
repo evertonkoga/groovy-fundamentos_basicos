@@ -1,3 +1,4 @@
+import classes.Client
 import org.junit.Test
 
 class ExercisesTest {
@@ -20,5 +21,15 @@ class ExercisesTest {
         println 200.50d.class.name
         // Valor literal BigDecimal
         println 200.50.class.name
+    }
+
+    @Test
+    void exercisePOGO() {
+        Client cliente = new Client()
+        cliente.setName "Everton Koga"
+        cliente.setCreateAt new Date()
+
+        println cliente.sum(10, 10)
+        println cliente.getName() + " - " + cliente.getCreateAt()
     }
 }
