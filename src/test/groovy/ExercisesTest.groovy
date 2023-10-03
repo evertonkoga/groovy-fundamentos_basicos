@@ -1,6 +1,9 @@
 import classes.Client
 import classes.ProductInJava
+import classes.ClientInJava as ClientJ
+import classes.Client as ClientG
 import org.junit.Test
+import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
 class ExercisesTest {
 
@@ -68,5 +71,16 @@ class ExercisesTest {
 
         product.price = 15.00d
         println product.name + " - " + product.price
+    }
+
+    @Test
+    void exerciseOperatorAs() {
+        ClientJ java = new ClientJ("koga", new Date())
+        println java.name + " - " + java.createAt
+
+        ClientG groovy = new ClientG(name: "Everton", createAt: new Date())
+        println groovy.name + " - " + groovy.createAt
+
+        println EXIT_ON_CLOSE
     }
 }

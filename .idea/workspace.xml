@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="Constructor overloading in java">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for direct field acess operator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,17 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseDirectFieldAcessOperator">
-    <configuration name="ExercisesTest.exercicio2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exercicio2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseOperatorAs">
     <configuration name="ExercisesTest.exerciseConstructorNamesArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,6 +73,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseDirectFieldAcessOperator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesTest.exerciseOperatorAs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseOperatorAs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorAs" />
         <item itemvalue="JUnit.ExercisesTest.exerciseDirectFieldAcessOperator" />
         <item itemvalue="JUnit.ExercisesTest.exercisePOGO" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSubscriptOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseConstructorNamesArguments" />
-        <item itemvalue="JUnit.ExercisesTest.exercicio2" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696362526496</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created test for direct field acess operator">
+      <created>1696363881982</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363881982</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +201,7 @@
     <MESSAGE value="created test for constructor names arguments" />
     <MESSAGE value="created test for subscript operator" />
     <MESSAGE value="Constructor overloading in java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Constructor overloading in java" />
+    <MESSAGE value="created test for direct field acess operator" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for direct field acess operator" />
   </component>
 </project>
