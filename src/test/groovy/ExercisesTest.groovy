@@ -32,4 +32,18 @@ class ExercisesTest {
         println cliente.sum(10, 10)
         println cliente.getName() + " - " + cliente.getCreateAt()
     }
+    @Test
+    void exerciseConstructorNamesArguments() {
+        Client client = new Client();
+        println client.getName() + " - " + client.getCreateAt()
+
+        client = new Client(name: "Everton")
+        println client.getName() + " - " + client.getCreateAt()
+
+        client = new Client(createAt: new Date())
+        println client.getName() + " - " + client.getCreateAt()
+
+        client = new Client(name: "Everton", createAt: new Date())
+        println client.getName() + " - " + client.getCreateAt()
+    }
 }
