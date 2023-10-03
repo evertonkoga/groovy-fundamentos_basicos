@@ -1,4 +1,6 @@
-class Exercicio_1 {
+package exercises
+
+class Exercise_1 {
     static main(args) {
         println "Hello world!"
 

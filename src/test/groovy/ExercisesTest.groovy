@@ -1,9 +1,9 @@
 import org.junit.Test
 
-class Exercicios {
+class ExercisesTest {
 
     @Test
-    void exercicio1ponto2() {
+    void exercisePrimitiveTypeLiteral() {
         int number = 10
         println number.toString()
 
