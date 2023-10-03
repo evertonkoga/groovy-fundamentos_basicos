@@ -2,6 +2,7 @@ import classes.Client
 import classes.ProductInJava
 import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
+import classes.Sale
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -82,5 +83,12 @@ class ExercisesTest {
         println groovy.name + " - " + groovy.createAt
 
         println EXIT_ON_CLOSE
+    }
+
+    @Test
+    void exerciseOptionalParameters() {
+        Sale sale = new Sale()
+        println sale.sell(40.0)
+        println sale.sell(40.0, 20)
     }
 }
