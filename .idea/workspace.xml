@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for subscript operator">
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.groovy" afterDir="false" />
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="Constructor overloading in java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/classes/ClientInJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,17 +58,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exercisePOGO">
-    <configuration name="ExercisesTest.exercicio1ponto2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exercicio1ponto2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseDirectFieldAcessOperator">
     <configuration name="ExercisesTest.exercicio2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,6 +74,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseConstructorNamesArguments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesTest.exerciseDirectFieldAcessOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseDirectFieldAcessOperator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseDirectFieldAcessOperator" />
         <item itemvalue="JUnit.ExercisesTest.exercisePOGO" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSubscriptOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseConstructorNamesArguments" />
         <item itemvalue="JUnit.ExercisesTest.exercicio2" />
-        <item itemvalue="JUnit.ExercisesTest.exercicio1ponto2" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696362355356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Constructor overloading in java">
+      <created>1696362526496</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696362526496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +194,7 @@
     <MESSAGE value="created POGO class" />
     <MESSAGE value="created test for constructor names arguments" />
     <MESSAGE value="created test for subscript operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for subscript operator" />
+    <MESSAGE value="Constructor overloading in java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Constructor overloading in java" />
   </component>
 </project>

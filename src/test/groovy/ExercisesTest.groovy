@@ -1,4 +1,5 @@
 import classes.Client
+import classes.ProductInJava
 import org.junit.Test
 
 class ExercisesTest {
@@ -57,5 +58,15 @@ class ExercisesTest {
 
         client["name"] = "Koga"
         println client["name"]
+    }
+
+    @Test
+    void exerciseDirectFieldAcessOperator() {
+        ProductInJava product = new ProductInJava("chocolate", 20.00d)
+        println product.name
+        println product.name = "bean"
+
+        product.price = 15.00d
+        println product.name + " - " + product.price
     }
 }

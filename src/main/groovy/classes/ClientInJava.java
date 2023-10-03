@@ -1,20 +1,19 @@
-package classes
+package classes;
 
-class ClientInJava {
-    private String name;
-    private Date createAt;
+import java.util.Date;
 
-    ClientInJava(String name) {
-        this.name = name
+public class ClientInJava {
+    public ClientInJava(String name) {
+        this.name = name;
     }
 
-    ClientInJava(Date createAt) {
-        this.createAt = createAt
+    public ClientInJava(Date createAt) {
+        this.createAt = createAt;
     }
 
-    ClientInJava(String name, Date createAt) {
-        this.name = name
-        this.createAt = createAt
+    public ClientInJava(String name, Date createAt) {
+        this.name = name;
+        this.createAt = createAt;
     }
 
     public Integer sum(Integer number1, Integer number2) {
@@ -36,4 +35,7 @@ class ClientInJava {
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
     }
+
+    private String name;
+    private Date createAt;
 }
