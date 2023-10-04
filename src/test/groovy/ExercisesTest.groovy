@@ -142,5 +142,26 @@ class ExercisesTest {
         lista = lista*.replace("E", "3")
         println lista
     }
+
+    @Test
+    void exerciseCheckedExceptions() {
+        // Em Java
+        /**
+        try {
+            URL url = new URL("https://google.com.br")
+        } catch (Exception ex) {
+            ex.printStackTrace()
+        }
+        **/
+
+        // Em Groovy
+        URL url = new URL("https://google.com.br")
+        println url
+
+        /** Vai quebrar aplicação
+         url = new URL("sdfoisdfsjdfsjdf")
+         println url
+         **/
+    }
 }
 

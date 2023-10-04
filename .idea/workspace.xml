@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Safe Navegator Operator">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Spread Operator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseSpreadOperator">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseCheckedExceptions">
     <configuration name="ExercisesTest.exerciseArrayOptionalParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -68,11 +68,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseOperatorAs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseCheckedExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseOperatorAs" />
+      <option name="METHOD_NAME" value="exerciseCheckedExceptions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseCheckedExceptions" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSpreadOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSafeNavegatorOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseArrayOptionalParameters" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOptionalParameters" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorAs" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696419533221</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="created test for Spread Operator">
+      <created>1696422707916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696422707916</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +241,7 @@
     <MESSAGE value="created test for optional parameters" />
     <MESSAGE value="created test for array optional parameters" />
     <MESSAGE value="created test for Safe Navegator Operator" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Safe Navegator Operator" />
+    <MESSAGE value="created test for Spread Operator" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Spread Operator" />
   </component>
 </project>
