@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @ToString">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @EqualsAndHashCode">
       <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/Employee.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/classes/Employee.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696443069205</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="created test for ATS Transformation @EqualsAndHashCode">
+      <created>1696443247233</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696443247233</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +303,7 @@
     <MESSAGE value="implements trait" />
     <MESSAGE value="created test for ATS @ToString" />
     <MESSAGE value="created test for ATS Transformation @ToString" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @ToString" />
+    <MESSAGE value="created test for ATS Transformation @EqualsAndHashCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @EqualsAndHashCode" />
   </component>
 </project>
