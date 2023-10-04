@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @Singleton">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @Builder">
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,17 +56,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseATSTransformationBuilder">
-    <configuration name="ExercisesTest.exerciseATSToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseATSToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseOperatorDef">
     <configuration name="ExercisesTest.exerciseATSTransformationBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -108,13 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseOperatorDef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseOperatorDef" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorDef" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationBuilder" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationSingleton" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationEmmutable" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationEqualsAndHashCode" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseATSToString" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696445728652</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="created test for ATS Transformation @Builder">
+      <created>1696447725532</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696447725532</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +342,7 @@
     <MESSAGE value="created test for ATS Transformation @EqualsAndHashCode" />
     <MESSAGE value="created test for ATS Transformation @Immutable" />
     <MESSAGE value="created test for ATS Transformation @Singleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @Singleton" />
+    <MESSAGE value="created test for ATS Transformation @Builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @Builder" />
   </component>
 </project>

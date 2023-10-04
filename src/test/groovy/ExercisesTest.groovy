@@ -294,5 +294,26 @@ class ExercisesTest {
         println food.fruit
         println food.candy
     }
+
+    @Test
+    void exerciseOperatorDef() {
+        def object = "koga"
+        println object.getClass()
+
+        object = 10
+        println object.getClass()
+
+        object = 20.9
+        println object.getClass()
+
+        object = 20.9f
+        println object.getClass()
+
+        object = new Ticket(client: "koga", number: 10)
+        println object.getClass()
+
+        object = new Employee(name: "koga", age: 35, wage: 1000.00)
+        println object.getClass()
+    }
 }
 
