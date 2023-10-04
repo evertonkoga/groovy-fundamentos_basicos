@@ -6,6 +6,7 @@ import classes.ProductInJava
 import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
 import classes.Sale
+import classes.Ticket
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -246,6 +247,21 @@ class ExercisesTest {
         Employee employee2 = new Employee(name: "koga", age: 35, wage: 5000)
         println employee1.equals(employee2)
         println employee2.equals(employee1)
+    }
+
+    @Test
+    void exerciseATSTransformationEmmutable() {
+        Ticket ticket1 = new Ticket(client: "Koga", number: 1)
+        Ticket ticket2 = new Ticket(client: "Koga", number: 1)
+        // Call getters
+        println ticket1.client + " - " + ticket1.number
+        // Call toString
+        println ticket1
+        // Call EqualsAndHashCode
+        println ticket1.equals(ticket2)
+        println ticket2.equals(ticket1)
+        // Call setters - but generete an exception
+        /** ticket1.number = 20 **/
     }
 }
 
