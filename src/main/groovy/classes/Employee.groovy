@@ -1,8 +1,10 @@
 package classes
 
+import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 @ToString(includeNames = true, excludes = "age, wage")
+@EqualsAndHashCode(excludes = "wage")
 class Employee {
     String name
     Integer age

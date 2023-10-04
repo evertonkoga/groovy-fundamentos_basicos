@@ -239,5 +239,13 @@ class ExercisesTest {
         Employee employee = new Employee(name: "koga", age: 35, wage: 1000)
         println employee
     }
+
+    @Test
+    void exerciseATSTransformationEqualsAndHashCode() {
+        Employee employee1 = new Employee(name: "koga", age: 35, wage: 1000)
+        Employee employee2 = new Employee(name: "koga", age: 35, wage: 5000)
+        println employee1.equals(employee2)
+        println employee2.equals(employee1)
+    }
 }
 
