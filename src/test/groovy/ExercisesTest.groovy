@@ -163,5 +163,39 @@ class ExercisesTest {
          println url
          **/
     }
+
+    @Test
+    void exerciseBooleanAvaluation() {
+        String name = null
+        println getMessage("name", name)
+
+        name = "Koga"
+        println getMessage("name", name)
+
+        int numer = 0
+        println getMessage("numer", numer)
+
+        numer = 1
+        println getMessage("numer", numer)
+
+        List list = null
+        println getMessage("list", list)
+
+        list = new ArrayList()
+        println getMessage("list", list)
+
+        list.add("Koga")
+        println getMessage("list", list)
+
+        Client client
+        println getMessage("client", client)
+
+        client = new Client()
+        println getMessage("client", client)
+    }
+
+    private String getMessage(attribute, value) {
+        value ? "${attribute} is not null" : "${attribute} is null"
+    }
 }
 
