@@ -209,5 +209,28 @@ class ExercisesTest {
         invoice1++
         println invoice1.price + " - " + invoice1.itens
     }
+
+    @Test
+    void exerciseOperatorOverloadingOfBigDecimal() {
+        // Em Java
+        /**
+        BigDecimal price = new BigDecimal(10)
+        println price
+        BigDecimal sum = price.add(new BigDecimal(1))
+        println sum
+         **/
+
+        // Em Groovy
+        BigDecimal price = 10
+        println price
+        // Operator plus(+)
+        price = price + 1
+        println price
+        // Operator next(++)
+        price++
+        println price
+        // Operator minus(-)
+        println price - 5
+    }
 }
 
