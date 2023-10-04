@@ -1,4 +1,5 @@
 import classes.Client
+import classes.Invoice
 import classes.Math
 import classes.ProductInJava
 import classes.ClientInJava as ClientJ
@@ -196,6 +197,17 @@ class ExercisesTest {
 
     private String getMessage(attribute, value) {
         value ? "${attribute} is not null" : "${attribute} is null"
+    }
+
+    @Test
+    void exerciseOperatorOverloading() {
+        Invoice invoice1 = new Invoice(itens: 20, price: 2)
+        Invoice invoice2 = new Invoice(itens: 20, price: 2)
+        Invoice invoice3 = invoice1 + invoice2
+        println invoice3.price + " - " + invoice3.itens
+
+        invoice1++
+        println invoice1.price + " - " + invoice1.itens
     }
 }
 

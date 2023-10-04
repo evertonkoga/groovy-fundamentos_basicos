@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for checked exceptions">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Boolean Avaluation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseBooleanAvaluation">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseOperatorOverloading">
     <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,11 +87,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseSafeNavegatorOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseOperatorOverloading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseSafeNavegatorOperator" />
+      <option name="METHOD_NAME" value="exerciseOperatorOverloading" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorOverloading" />
         <item itemvalue="JUnit.ExercisesTest.exerciseBooleanAvaluation" />
         <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseCheckedExceptions" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSpreadOperator" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseSafeNavegatorOperator" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696423406926</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created test for Boolean Avaluation">
+      <created>1696427726231</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696427726231</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +256,7 @@
     <MESSAGE value="created test for Safe Navegator Operator" />
     <MESSAGE value="created test for Spread Operator" />
     <MESSAGE value="created test for checked exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for checked exceptions" />
+    <MESSAGE value="created test for Boolean Avaluation" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Boolean Avaluation" />
   </component>
 </project>
