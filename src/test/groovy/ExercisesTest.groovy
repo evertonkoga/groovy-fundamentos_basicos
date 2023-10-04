@@ -104,13 +104,43 @@ class ExercisesTest {
     @Test
     void exerciseSafeNavegatorOperator() {
         Client client = null
-        client?.name = "Everton" // Em java seria if(client != null) client.setName("Everton")
+        // Em Java
+        /** if(client != null) {
+            client.setName("Everton")
+            println client.getName()
+        } **/
+        // Em Groovy
+        client?.name = "Everton"
         println client?.getName()
 
         Client client2 = new Client()
         client2.name = "Koga"
         println client2?.getName()
         println client2?.name
+    }
+
+    @Test
+    void exerciseSpreadOperator() {
+        List<String> lista = Arrays.asList(
+                "Everton",
+                "Fabiano",
+                "Koga",
+                null,
+                "Everton Fabiano Koga"
+        )
+        println lista
+         // Em Java
+        /**for(String value: lista) {
+            if (value != null)
+                value = value.toUpperCase()
+        }**/
+
+        // Em Groovy
+        lista = lista*.toUpperCase()
+        println lista
+
+        lista = lista*.replace("E", "3")
+        println lista
     }
 }
 

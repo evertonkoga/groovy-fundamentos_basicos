@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for array optional parameters">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Safe Navegator Operator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,22 +57,12 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseSafeNavegatorOperator">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseSpreadOperator">
     <configuration name="ExercisesTest.exerciseArrayOptionalParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseArrayOptionalParameters" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseDirectFieldAcessOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseDirectFieldAcessOperator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,13 +98,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseSpreadOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseSpreadOperator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseSpreadOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseSafeNavegatorOperator" />
         <item itemvalue="JUnit.ExercisesTest.exerciseArrayOptionalParameters" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOptionalParameters" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorAs" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseDirectFieldAcessOperator" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696417964179</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created test for Safe Navegator Operator">
+      <created>1696419533221</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696419533221</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +233,7 @@
     <MESSAGE value="created test for operator 'as'" />
     <MESSAGE value="created test for optional parameters" />
     <MESSAGE value="created test for array optional parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for array optional parameters" />
+    <MESSAGE value="created test for Safe Navegator Operator" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Safe Navegator Operator" />
   </component>
 </project>
