@@ -1,4 +1,5 @@
 import classes.Client
+import classes.Connection
 import classes.Employee
 import classes.Invoice
 import classes.Math
@@ -262,6 +263,22 @@ class ExercisesTest {
         println ticket2.equals(ticket1)
         // Call setters - but generete an exception
         /** ticket1.number = 20 **/
+    }
+
+    @Test
+    void exerciseATSTransformationSingleton() {
+        Connection.instance.url = "https://google.com"
+        println Connection.instance.url
+
+        Connection connection = Connection.instance
+        connection.url = "https://gmail.com"
+        println Connection.instance.url
+
+        // Gera erro
+        /**
+        Connection c = new Connection()
+        println c
+         **/
     }
 }
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @EqualsAndHashCode">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for ATS Transformation @Immutable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,16 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseATSTransformationEmmutable">
-    <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseATSTransformationSingleton">
     <configuration name="ExercisesTest.exerciseATSToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,6 +88,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseATSTransformationSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseATSTransformationSingleton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercisesTest.exerciseOperatorOverloadingOfDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationSingleton" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationEmmutable" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationEqualsAndHashCode" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSToString" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorOverloadingOfDate" />
-        <item itemvalue="JUnit.ExercisesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +275,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696443572253</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="created test for ATS Transformation @Immutable">
+      <created>1696444459615</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1696444459615</updated>
+    </task>
+    <task id="LOCAL-00023" summary="created test for ATS Transformation @Immutable">
+      <created>1696444529154</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1696444529154</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +327,7 @@
     <MESSAGE value="created test for ATS @ToString" />
     <MESSAGE value="created test for ATS Transformation @ToString" />
     <MESSAGE value="created test for ATS Transformation @EqualsAndHashCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @EqualsAndHashCode" />
+    <MESSAGE value="created test for ATS Transformation @Immutable" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for ATS Transformation @Immutable" />
   </component>
 </project>
