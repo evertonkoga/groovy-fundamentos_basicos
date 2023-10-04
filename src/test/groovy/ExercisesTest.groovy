@@ -100,5 +100,17 @@ class ExercisesTest {
         println math.sum(10, 10)
         println math.sum(10, 10, 10)
     }
+
+    @Test
+    void exerciseSafeNavegatorOperator() {
+        Client client = null
+        client?.name = "Everton" // Em java seria if(client != null) client.setName("Everton")
+        println client?.getName()
+
+        Client client2 = new Client()
+        client2.name = "Koga"
+        println client2?.getName()
+        println client2?.name
+    }
 }
 
