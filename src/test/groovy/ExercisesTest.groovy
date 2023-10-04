@@ -235,7 +235,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseATSToString() {
+    void exerciseATSTransformationToString() {
         Employee employee = new Employee(name: "koga", age: 35, wage: 1000)
         println employee
     }
