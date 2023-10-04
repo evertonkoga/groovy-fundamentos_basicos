@@ -1,6 +1,7 @@
 import classes.Client
 import classes.Connection
 import classes.Employee
+import classes.Food
 import classes.Invoice
 import classes.Math
 import classes.ProductInJava
@@ -279,6 +280,19 @@ class ExercisesTest {
         Connection c = new Connection()
         println c
          **/
+    }
+
+    @Test
+    void exerciseATSTransformationBuilder() {
+        Food food = Food.builder()
+                .fruit("banana")
+        .candy("chocolate")
+        .drink("water")
+        .build()
+
+        println food.drink
+        println food.fruit
+        println food.candy
     }
 }
 
