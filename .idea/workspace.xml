@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Operator def">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Operator def dynamic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,32 +57,22 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseDynamicDef">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseOperatorForIn">
+    <configuration name="ExercisesTest.exercicio13Dois" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exercicio13Dois" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercisesTest.exerciseATSTransformationBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseATSTransformationBuilder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseATSTransformationEmmutable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseATSTransformationEmmutable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseATSTransformationSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseATSTransformationSingleton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,13 +98,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseOperatorForIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseOperatorForIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorForIn" />
+        <item itemvalue="JUnit.ExercisesTest.exercicio13Dois" />
         <item itemvalue="JUnit.ExercisesTest.exerciseDynamicDef" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorDef" />
         <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationBuilder" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationSingleton" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseATSTransformationEmmutable" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696448310494</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="created test for Operator def dynamic">
+      <created>1696449033802</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1696449033802</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +359,7 @@
     <MESSAGE value="created test for ATS Transformation @Singleton" />
     <MESSAGE value="created test for ATS Transformation @Builder" />
     <MESSAGE value="created test for Operator def" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Operator def" />
+    <MESSAGE value="created test for Operator def dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Operator def dynamic" />
   </component>
 </project>

@@ -318,7 +318,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseDynamicDef() {
+    void exerciseOperatorDynamicDef() {
         def object = new DynamicDef()
         def value = object.call("koga_")
         println value.getClass()
@@ -335,6 +335,37 @@ class ExercisesTest {
         value = object.call(5.0)
         println value.getClass()
         println value
+    }
+
+    @Test
+    void exerciseOperatorForIn() {
+        def list = new ArrayList<String>()
+        list.add("Everton")
+        list.add("Koga")
+        for(item in list) {
+            println item.getClass()
+            println item
+        }
+
+        list = new ArrayList<Integer>()
+        list.add(10)
+        list.add(120)
+        for(item in list) {
+            println item.getClass()
+            println item
+        }
+
+        list = "Koga"
+        for(item in list) {
+            println item.getClass()
+            println item
+        }
+
+        list = 10
+        for(item in list) {
+            println item.getClass()
+            println item
+        }
     }
 }
 
