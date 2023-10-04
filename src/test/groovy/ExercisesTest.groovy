@@ -1,4 +1,5 @@
 import classes.Client
+import classes.Employee
 import classes.Invoice
 import classes.Math
 import classes.ProductInJava
@@ -231,6 +232,12 @@ class ExercisesTest {
         println price
         // Operator minus(-)
         println price - 5
+    }
+
+    @Test
+    void exerciseATSToString() {
+        Employee employee = new Employee(name: "koga", age: 35, wage: 1000)
+        println employee
     }
 }
 

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Operator Overloading of BigDecimal">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="implements trait">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseOperatorOverloadingOfDate">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseATSToString">
     <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -66,11 +67,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseBooleanAvaluation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseATSToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseBooleanAvaluation" />
+      <option name="METHOD_NAME" value="exerciseATSToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseATSToString" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorOverloadingOfDate" />
         <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorOverloadingBigDecimal" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorOverloading" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseBooleanAvaluation" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696438510319</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="implements trait">
+      <created>1696441105645</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1696441105645</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="created test for Boolean Avaluation" />
     <MESSAGE value="created test for Operator Overloading" />
     <MESSAGE value="created test for Operator Overloading of BigDecimal" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Operator Overloading of BigDecimal" />
+    <MESSAGE value="implements trait" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements trait" />
   </component>
 </project>
