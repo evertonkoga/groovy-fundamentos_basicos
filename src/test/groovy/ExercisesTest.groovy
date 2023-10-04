@@ -1,5 +1,6 @@
 import classes.Client
 import classes.Connection
+import classes.DynamicDef
 import classes.Employee
 import classes.Food
 import classes.Invoice
@@ -314,6 +315,26 @@ class ExercisesTest {
 
         object = new Employee(name: "koga", age: 35, wage: 1000.00)
         println object.getClass()
+    }
+
+    @Test
+    void exerciseDynamicDef() {
+        def object = new DynamicDef()
+        def value = object.call("koga_")
+        println value.getClass()
+        println value
+
+        value = object.call(5)
+        println value.getClass()
+        println value
+
+        value = object.call(5d)
+        println value.getClass()
+        println value
+
+        value = object.call(5.0)
+        println value.getClass()
+        println value
     }
 }
 
