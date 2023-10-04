@@ -250,7 +250,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseATSTransformationEmmutable() {
+    void exerciseATSTransformationImmutable() {
         Ticket ticket1 = new Ticket(client: "Koga", number: 1)
         Ticket ticket2 = new Ticket(client: "Koga", number: 1)
         // Call getters
