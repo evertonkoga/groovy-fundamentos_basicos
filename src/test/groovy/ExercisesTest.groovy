@@ -1,4 +1,5 @@
 import classes.Client
+import classes.Math
 import classes.ProductInJava
 import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
@@ -91,4 +92,13 @@ class ExercisesTest {
         println sale.sell(40.0)
         println sale.sell(40.0, 20)
     }
+
+    @Test
+    void exerciseArrayOptionalParameters() {
+        Math math = new Math()
+        println math.sum(10)
+        println math.sum(10, 10)
+        println math.sum(10, 10, 10)
+    }
 }
+
