@@ -385,4 +385,20 @@ class ExercisesTest {
         println print(" Koga ")
         println print("fabiano")
     }
+
+    @Test
+    void exerciseClosureMethodWithDynamicParams() {
+        def method = { param1, param2 -> param1 + param2 }
+        def result = method(5, 5)
+        println result.class
+        println result
+
+        result = method( "ko", "ga")
+        println result.class
+        println result
+
+        result = method( 10.5, 9.5)
+        println result.class
+        println result
+    }
 }

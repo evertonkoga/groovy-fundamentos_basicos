@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Operator for-in">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Closure elaborate method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseClosure">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseClosureMethodWithDynamicParams">
     <configuration name="ExercisesTest.exercicio13Dois" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -78,21 +78,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseDynamicDef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseClosureMethodWithDynamicParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseDynamicDef" />
+      <option name="METHOD_NAME" value="exerciseClosureMethodWithDynamicParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseOperatorDef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseDynamicDef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseOperatorDef" />
+      <option name="METHOD_NAME" value="exerciseDynamicDef" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodWithDynamicParams" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosure" />
         <item itemvalue="JUnit.ExercisesTest.exerciseOperatorForIn" />
         <item itemvalue="JUnit.ExercisesTest.exercicio13Dois" />
         <item itemvalue="JUnit.ExercisesTest.exerciseDynamicDef" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorDef" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +324,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696449744229</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="created test for Closure simple method">
+      <created>1696507639701</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1696507639701</updated>
+    </task>
+    <task id="LOCAL-00030" summary="created test for Closure elaborate method">
+      <created>1696507680688</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1696507680688</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,8 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed to english" />
-    <MESSAGE value="created POGO class" />
     <MESSAGE value="created test for constructor names arguments" />
     <MESSAGE value="created test for subscript operator" />
     <MESSAGE value="Constructor overloading in java" />
@@ -367,6 +379,8 @@
     <MESSAGE value="created test for Operator def" />
     <MESSAGE value="created test for Operator def dynamic" />
     <MESSAGE value="created test for Operator for-in" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Operator for-in" />
+    <MESSAGE value="created test for Closure simple method" />
+    <MESSAGE value="created test for Closure elaborate method" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Closure elaborate method" />
   </component>
 </project>
