@@ -508,4 +508,21 @@ class ExercisesTest {
         invoice.client = "Everton"
         println invoice.client
     }
+
+    @Test
+    void exerciseMOPExpandoMetaClassAddAttributeOnClass() {
+        def invoice = new InvoiceForMOP()
+        // Lança exceção, porque o atributo ainda não existe
+        // invoice.client = "Koga"
+
+        // Adiciona o atributo dinâmicamente na classe
+        InvoiceForMOP.metaClass.client = null
+        invoice = new InvoiceForMOP()
+        invoice.client = "Koga"
+        println invoice.client
+
+        // Atribuido novo valor ao atributo
+        invoice.client = "Everton"
+        println invoice.client
+    }
 }
