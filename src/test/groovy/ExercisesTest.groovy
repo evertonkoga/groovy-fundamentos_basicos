@@ -10,6 +10,7 @@ import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
 import classes.Sale
 import classes.Ticket
+import classes.closure.Report
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -400,5 +401,14 @@ class ExercisesTest {
         result = method( 10.5, 9.5)
         println result.class
         println result
+    }
+
+    @Test
+    void exerciseClosureMethodWithClosureParams() {
+        def clean = { text ->
+            text.trim().replace("a","@").replace(" ","").capitalize()
+        }
+        def report = new Report()
+        report.emit(" Koga ", clean)
     }
 }
