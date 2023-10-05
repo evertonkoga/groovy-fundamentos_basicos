@@ -605,17 +605,21 @@ class ExercisesTest {
 
     @Test
     void exerciseGDKOverloadString() {
+        // Comparação
         def text1 = "koga"
         def text2 = "koga"
         println text1 == text2
 
+        // Sobrecarga do operador (-)
         def newText = text1 - "ga"
         println newText
 
+        // Novos métodos + closures
         String fullName = "everton koga"
         println fullName.capitalize()
         println fullName.findIndexOf {it == "e"}
 
+        // Multiline
         String largeText = '''
         My text
         is very large
@@ -623,11 +627,11 @@ class ExercisesTest {
         '''
         println largeText
 
+        // Interporlação de string e evitar utilizar (+)
         def name = "koga"
         def age = 35
         def wage = 1000.52
         def sql = "insert into cliente(name, age, wage) values($name, $age, $wage)"
-
         println sql
     }
 }
