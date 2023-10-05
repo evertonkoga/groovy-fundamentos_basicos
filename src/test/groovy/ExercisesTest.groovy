@@ -112,9 +112,9 @@ class ExercisesTest {
         Client client = null
         // Em Java
         /** if(client != null) {
-            client.setName("Everton")
-            println client.getName()
-        } **/
+         client.setName("Everton")
+         println client.getName()
+         } **/
         // Em Groovy
         client?.name = "Everton"
         println client?.getName()
@@ -135,11 +135,11 @@ class ExercisesTest {
                 "Everton Fabiano Koga"
         )
         println lista
-         // Em Java
+        // Em Java
         /**for(String value: lista) {
-            if (value != null)
-                value = value.toUpperCase()
-        }**/
+         if (value != null)
+         value = value.toUpperCase()
+         }**/
 
         // Em Groovy
         lista = lista*.toUpperCase()
@@ -153,12 +153,12 @@ class ExercisesTest {
     void exerciseCheckedExceptions() {
         // Em Java
         /**
-        try {
-            URL url = new URL("https://google.com.br")
-        } catch (Exception ex) {
-            ex.printStackTrace()
-        }
-        **/
+         try {
+         URL url = new URL("https://google.com.br")
+         } catch (Exception ex) {
+         ex.printStackTrace()
+         }
+         **/
 
         // Em Groovy
         URL url = new URL("https://google.com.br")
@@ -219,10 +219,10 @@ class ExercisesTest {
     void exerciseOperatorOverloadingOfBigDecimal() {
         // Em Java
         /**
-        BigDecimal price = new BigDecimal(10)
-        println price
-        BigDecimal sum = price.add(new BigDecimal(1))
-        println sum
+         BigDecimal price = new BigDecimal(10)
+         println price
+         BigDecimal sum = price.add(new BigDecimal(1))
+         println sum
          **/
 
         // Em Groovy
@@ -278,8 +278,8 @@ class ExercisesTest {
 
         // Gera erro
         /**
-        Connection c = new Connection()
-        println c
+         Connection c = new Connection()
+         println c
          **/
     }
 
@@ -287,9 +287,9 @@ class ExercisesTest {
     void exerciseATSTransformationBuilder() {
         Food food = Food.builder()
                 .fruit("banana")
-        .candy("chocolate")
-        .drink("water")
-        .build()
+                .candy("chocolate")
+                .drink("water")
+                .build()
 
         println food.drink
         println food.fruit
@@ -342,7 +342,7 @@ class ExercisesTest {
         def list = new ArrayList<String>()
         list.add("Everton")
         list.add("Koga")
-        for(item in list) {
+        for (item in list) {
             println item.getClass()
             println item
         }
@@ -350,22 +350,28 @@ class ExercisesTest {
         list = new ArrayList<Integer>()
         list.add(10)
         list.add(120)
-        for(item in list) {
+        for (item in list) {
             println item.getClass()
             println item
         }
 
         list = "Koga"
-        for(item in list) {
+        for (item in list) {
             println item.getClass()
             println item
         }
 
         list = 10
-        for(item in list) {
+        for (item in list) {
             println item.getClass()
             println item
         }
     }
-}
 
+    @Test
+    void exerciseClosureSimpleMethod() {
+        def method = { int value1, int value2 -> value1 + value2 }
+        println method(1, 2)
+        println method(2, 3)
+    }
+}
