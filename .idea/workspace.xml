@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Closure dynamic implementation">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class add method on object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnObject">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass">
     <configuration name="ExercisesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <module name="groovy-fundamentos_basicos" />
@@ -78,21 +78,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseClosureMethodImplementingInterfaceFuncional" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseClosureMethodImplementingInterfaceFuncional" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExercisesTest.exerciseClosureMethodImplementingInterfaceNotFuncionalWithManyMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseClosureMethodImplementingInterfaceNotFuncionalWithManyMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddMethodOnClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnObject" />
         <item itemvalue="Application.Screen" />
         <item itemvalue="Application.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodImplementingInterfaceNotFuncionalWithManyMethods" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodImplementingInterfaceFuncional" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696515850821</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="created test for MOP Meta Class add method on object">
+      <created>1696517314775</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1696517314775</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Safe Navegator Operator" />
     <MESSAGE value="created test for Spread Operator" />
     <MESSAGE value="created test for checked exceptions" />
     <MESSAGE value="created test for Boolean Avaluation" />
@@ -430,6 +436,7 @@
     <MESSAGE value="created test for Closure  method implementing interface funcional" />
     <MESSAGE value="created test for Closure  method implementing interface not funcional with many methods" />
     <MESSAGE value="created test for Closure dynamic implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Closure dynamic implementation" />
+    <MESSAGE value="created test for MOP Meta Class add method on object" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class add method on object" />
   </component>
 </project>

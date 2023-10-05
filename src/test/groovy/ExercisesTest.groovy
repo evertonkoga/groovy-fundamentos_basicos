@@ -477,4 +477,20 @@ class ExercisesTest {
         invoice.sell(10.00)
         invoice.sell(1050.00)
     }
+
+    @Test
+    void exerciseMOPExpandoMetaClassAddMethodOnClass() {
+        def invoice = new InvoiceForMOP()
+        // Lança exceção, porque o método ainda não existe
+        // invoice.sell(10.00)
+
+        // Adiciona o método dinâmicamente na classe
+        InvoiceForMOP.metaClass.sell = { println "Fatura no valor de $it" }
+
+        invoice = new InvoiceForMOP()
+        invoice.sell(20)
+
+        invoice = new InvoiceForMOP()
+        invoice.sell(55.00)
+    }
 }
