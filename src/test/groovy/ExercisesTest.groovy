@@ -18,6 +18,7 @@ import classes.mop.Invoice as InvoiceForMOP
 import classes.mop.Travel
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
+import static java.util.Calendar.*
 
 class ExercisesTest {
 
@@ -633,5 +634,46 @@ class ExercisesTest {
         def wage = 1000.52
         def sql = "insert into cliente(name, age, wage) values($name, $age, $wage)"
         println sql
+    }
+
+    @Test
+    void exerciseGDKOverloadDate() {
+        def date1 = new Date()
+        println date1
+
+        date1[YEAR] = 2010
+        date1[MONTH] = 8
+        date1[DATE] = 16
+        println date1
+
+        def date2 = new Date()
+        date2[YEAR] = 2015
+        date2[MONTH] = DECEMBER
+        date2[DATE] = 25
+        println date2
+
+        if (date2 >= date1)
+            println "a data 2 é maior"
+
+        Date date = new Date()
+        println date
+
+        // Adiciona 1 dia
+        date += 1
+        println date
+        // Subtrai 2 dia
+        date -= 2
+        println date
+
+        // Adiciona 1 dia
+        date++
+        println date
+
+        // Subtrai 1 dia
+        date--
+        println date
+
+        // Formata data
+        println date.format("dd/MM/yyyy hh:mm:ss")
     }
 }
