@@ -570,4 +570,17 @@ class ExercisesTest {
         travel.metaClass.travel = newMethod
         travel.travel(expectedDestination, expectedPrice)
     }
+
+    @Test
+    void exerciseMOPExpandoDynamicBean() {
+        Expando client = new Expando()
+        client.name = "Koga"
+        client.age = 35
+        client.show = { println "Nome $name idade é $age" }
+        client.show()
+
+        Expando book = new Expando(author: "koga", page: 10)
+        println book.author
+        println book.page
+    }
 }
