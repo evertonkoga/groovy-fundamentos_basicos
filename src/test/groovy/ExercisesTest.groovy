@@ -676,4 +676,14 @@ class ExercisesTest {
         // Formata data
         println date.format("dd/MM/yyyy hh:mm:ss")
     }
+
+    @Test
+    void exerciseGDKOverloadInteger() {
+        // Loop que inicia de 0 até 9
+        10.times { println it }
+        // Loop que inicia em 5 indo até 10
+        5.upto(10) { println it }
+        // Loop que inicia em 3 indo até 0
+        3.downto(0) { println it }
+    }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="changed groovy lib version from 4.0.14 to 3.0.11">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK overload Date">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -60,7 +60,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseGDKOverloadDate">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseGDKOverloadInteger">
     <configuration name="ExercisesTest.exerciseGDKOverloadBigDecimal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,21 +81,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseGDKOverloadString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseGDKOverloadInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKOverloadString" />
+      <option name="METHOD_NAME" value="exerciseGDKOverloadInteger" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseMOPExpandoDinamicBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseGDKOverloadString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseMOPExpandoDinamicBean" />
+      <option name="METHOD_NAME" value="exerciseGDKOverloadString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadInteger" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadDate" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadString" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadBigDecimal" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoDynamicBean" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoDinamicBean" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696536472462</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="create test for GDK overload Date">
+      <created>1696537835082</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1696537835082</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for ATS Transformation @Singleton" />
     <MESSAGE value="created test for ATS Transformation @Builder" />
     <MESSAGE value="created test for Operator def" />
     <MESSAGE value="created test for Operator def dynamic" />
@@ -510,6 +516,7 @@
     <MESSAGE value="created test for GDK overload BigDecimal" />
     <MESSAGE value="created test for GDK overload String" />
     <MESSAGE value="changed groovy lib version from 4.0.14 to 3.0.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed groovy lib version from 4.0.14 to 3.0.11" />
+    <MESSAGE value="create test for GDK overload Date" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK overload Date" />
   </component>
 </project>
