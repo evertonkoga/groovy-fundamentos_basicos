@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class add static method on class">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class add static method on object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnObject">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassOverrideMethod">
     <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,16 +72,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddAttributeOnClass" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddMethodOnClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,13 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassOverrideMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassOverrideMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassOverrideMethod" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnObject" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass" />
         <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddAttributeOnClass" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696519021583</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="created test for MOP Meta Class add static method on object">
+      <created>1696519463638</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1696519463638</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Operator Overloading of BigDecimal" />
     <MESSAGE value="implements trait" />
     <MESSAGE value="created test for ATS @ToString" />
     <MESSAGE value="created test for ATS Transformation @ToString" />
@@ -464,6 +470,7 @@
     <MESSAGE value="created test for MOP Meta Class add attribute on object" />
     <MESSAGE value="created test for MOP Meta Class add attribute on class" />
     <MESSAGE value="created test for MOP Meta Class add static method on class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class add static method on class" />
+    <MESSAGE value="created test for MOP Meta Class add static method on object" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class add static method on object" />
   </component>
 </project>

@@ -15,6 +15,7 @@ import classes.closure.Report
 import classes.closure.Singer
 import classes.closure.Stage
 import classes.mop.Invoice as InvoiceForMOP
+import classes.mop.Travel
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -551,5 +552,22 @@ class ExercisesTest {
          * Lança uma exceção, porque o método estatico não foi adicionado na classe
          */
         // InvoiceForMOP.sell(55.00)
+    }
+
+    @Test
+    void exerciseMOPExpandoMetaClassOverrideMethod() {
+        String expectedDestination = "Londrina"
+        BigDecimal expectedPrice = 9.99
+
+        Travel travel = new Travel()
+        travel.travel(expectedDestination, expectedPrice)
+
+        // Para fazer o override é necessário adicionar a tipagem no(s) parametros
+        def newMethod = { String destination, BigDecimal price ->
+            price += 3.5
+            println "Novo valor para $destination será $price"
+        }
+        travel.metaClass.travel = newMethod
+        travel.travel(expectedDestination, expectedPrice)
     }
 }
