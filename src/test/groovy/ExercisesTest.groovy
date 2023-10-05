@@ -11,6 +11,8 @@ import classes.Client as ClientG
 import classes.Sale
 import classes.Ticket
 import classes.closure.Report
+import classes.closure.Singer
+import classes.closure.Stage
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -424,5 +426,21 @@ class ExercisesTest {
         def report = new Report()
         report.emit("Everton") { "$it Fabiano Koga" }
         report.emit("everton") { it.reverse() }
+    }
+
+    @Test
+    void exerciseClosureMethodImplementingInterfaceFuncional() {
+        Stage stage = new Stage()
+        Singer singer
+
+        def implementation = { println "Vou cantar" }
+        singer = implementation
+        singer.sing()
+        stage.show(singer)
+
+        singer = { println "Estou cantando" }
+        singer.sing()
+
+        stage.show({ println "Parei de cantar" })
     }
 }
