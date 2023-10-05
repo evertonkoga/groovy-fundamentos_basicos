@@ -374,4 +374,15 @@ class ExercisesTest {
         println method(1, 2)
         println method(2, 3)
     }
+
+    @Test
+    void exerciseClosureElaborateMethod() {
+        def print = { String value ->
+            String temp = value.trim().replace("a","@")
+            temp.toUpperCase()
+        }
+
+        println print(" Koga ")
+        println print("fabiano")
+    }
 }
