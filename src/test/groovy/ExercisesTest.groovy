@@ -411,4 +411,11 @@ class ExercisesTest {
         def report = new Report()
         report.emit(" Koga ", clean)
     }
+
+    @Test
+    void exerciseClosureMethodOmittingClosureParamWhenLastParameter() {
+        def report = new Report()
+        report.emit(" Everton "){ param -> "$param koga" }
+        report.emit(" koga "){ param -> param.replace("a", "@") }
+    }
 }
