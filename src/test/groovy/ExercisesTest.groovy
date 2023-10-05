@@ -602,4 +602,32 @@ class ExercisesTest {
         value3 = value1 * value2
         println value3
     }
+
+    @Test
+    void exerciseGDKOverloadString() {
+        def text1 = "koga"
+        def text2 = "koga"
+        println text1 == text2
+
+        def newText = text1 - "ga"
+        println newText
+
+        String fullName = "everton koga"
+        println fullName.capitalize()
+        println fullName.findIndexOf {it == "e"}
+
+        String largeText = '''
+        My text
+        is very large
+        and not need add + to concact
+        '''
+        println largeText
+
+        def name = "koga"
+        def age = 35
+        def wage = 1000.52
+        def sql = "insert into cliente(name, age, wage) values($name, $age, $wage)"
+
+        println sql
+    }
 }
