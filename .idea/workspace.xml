@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Closure  method with closure params">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for Closure  method omitting closure param when last parameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseClosureMethodOmittingClosureParamWhenLastParameter">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseClosureMethodOmittingParameter">
     <configuration name="ExercisesTest.exerciseClosure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,6 +73,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseClosureMethodOmittingClosureParamWhenLastParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesTest.exerciseClosureMethodOmittingParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseClosureMethodOmittingParameter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,23 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseOperatorForIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseOperatorForIn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodOmittingParameter" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodOmittingClosureParamWhenLastParameter" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodWithClosureParams" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosureMethodWithDynamicParams" />
         <item itemvalue="JUnit.ExercisesTest.exerciseClosure" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseOperatorForIn" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696510124442</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="created test for Closure  method omitting closure param when last parameter">
+      <created>1696512057508</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1696512057508</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Constructor overloading in java" />
     <MESSAGE value="created test for direct field acess operator" />
     <MESSAGE value="created test for operator 'as'" />
     <MESSAGE value="created test for optional parameters" />
@@ -395,6 +401,7 @@
     <MESSAGE value="created test for Closure elaborate method" />
     <MESSAGE value="created test for Closure  method with dynamic params" />
     <MESSAGE value="created test for Closure  method with closure params" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for Closure  method with closure params" />
+    <MESSAGE value="created test for Closure  method omitting closure param when last parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for Closure  method omitting closure param when last parameter" />
   </component>
 </project>

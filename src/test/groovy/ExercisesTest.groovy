@@ -418,4 +418,11 @@ class ExercisesTest {
         report.emit(" Everton "){ param -> "$param koga" }
         report.emit(" koga "){ param -> param.replace("a", "@") }
     }
+
+    @Test
+    void exerciseClosureMethodOmittingParameterOfClosure() {
+        def report = new Report()
+        report.emit("Everton") { "$it Fabiano Koga" }
+        report.emit("everton") { it.reverse() }
+    }
 }
