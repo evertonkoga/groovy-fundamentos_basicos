@@ -10,6 +10,7 @@ import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
 import classes.Sale
 import classes.Ticket
+import classes.closure.Fan
 import classes.closure.Report
 import classes.closure.Singer
 import classes.closure.Stage
@@ -442,5 +443,25 @@ class ExercisesTest {
         singer.sing()
 
         stage.show({ println "Parei de cantar" })
+    }
+
+    @Test
+    void exerciseClosureMethodImplementingInterfaceNotFuncionalWithManyMethods() {
+        Fan fan
+        def santos = [
+                jump: { println "Os santistas estão pulando" },
+                scream: { println "$it santos" }
+        ] as Fan
+        fan = santos
+        fan.jump()
+        fan.scream("vai ")
+
+        def gremio = [
+                jump: { println "Os gremistas estão pulando" },
+                scream: { println "$it gremio" }
+        ] as Fan
+        fan = gremio
+        fan.jump()
+        fan.scream("vai ")
     }
 }
