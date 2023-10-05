@@ -525,4 +525,13 @@ class ExercisesTest {
         invoice.client = "Everton"
         println invoice.client
     }
+
+    @Test
+    void exerciseMOPExpandoMetaClassAddStaticMethodOnClass() {
+        InvoiceForMOP.metaClass.static.sell = { println "Fatura no valor de $it" }
+        InvoiceForMOP.sell(55.00)
+
+        def invoice = new InvoiceForMOP()
+        invoice.sell(20)
+    }
 }

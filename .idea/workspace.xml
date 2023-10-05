@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class add attribute on object">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class add attribute on class">
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddAttributeOnClass">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass">
     <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,11 +96,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddMethodOnObject" />
+      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddStaticMethodOnClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass" />
+        <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddAttributeOnClass" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnClass" />
-        <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddAttributeOnObject" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddMethodOnObject" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696518100700</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="created test for MOP Meta Class add attribute on class">
+      <created>1696518581956</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1696518581956</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Boolean Avaluation" />
     <MESSAGE value="created test for Operator Overloading" />
     <MESSAGE value="created test for Operator Overloading of BigDecimal" />
     <MESSAGE value="implements trait" />
@@ -450,6 +455,7 @@
     <MESSAGE value="created test for MOP Meta Class add method on object" />
     <MESSAGE value="created test for MOP Meta Class add method on class" />
     <MESSAGE value="created test for MOP Meta Class add attribute on object" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class add attribute on object" />
+    <MESSAGE value="created test for MOP Meta Class add attribute on class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class add attribute on class" />
   </component>
 </project>
