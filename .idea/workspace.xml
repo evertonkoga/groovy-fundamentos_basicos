@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP Meta Class override method">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="created test for MOP with expando dynamic bean">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,17 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseMOPExpandoDynamicBean">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseGDKOverloadBigDecimal">
+    <configuration name="ExercisesTest.exerciseGDKOverloadBigDecimal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseGDKOverloadBigDecimal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercisesTest.exerciseMOPExpandoDinamicBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,16 +82,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseMOPExpandoDynamicBean" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseMOPExpandoMetaClassAddStaticMethodOnClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadBigDecimal" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoDynamicBean" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoDinamicBean" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassOverrideMethod" />
         <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnObject" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseMOPExpandoMetaClassAddStaticMethodOnClass" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696526947837</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="created test for MOP with expando dynamic bean">
+      <created>1696527983993</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1696527983993</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for ATS @ToString" />
     <MESSAGE value="created test for ATS Transformation @ToString" />
     <MESSAGE value="created test for ATS Transformation @EqualsAndHashCode" />
     <MESSAGE value="created test for ATS Transformation @Immutable" />
@@ -479,6 +484,7 @@
     <MESSAGE value="created test for MOP Meta Class add static method on class" />
     <MESSAGE value="created test for MOP Meta Class add static method on object" />
     <MESSAGE value="created test for MOP Meta Class override method" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP Meta Class override method" />
+    <MESSAGE value="created test for MOP with expando dynamic bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="created test for MOP with expando dynamic bean" />
   </component>
 </project>

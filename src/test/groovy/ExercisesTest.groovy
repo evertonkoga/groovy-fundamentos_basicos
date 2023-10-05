@@ -583,4 +583,23 @@ class ExercisesTest {
         println book.author
         println book.page
     }
+
+    @Test
+    void exerciseGDKOverloadBigDecimal() {
+        def value1 = new BigDecimal(10.5)
+        def value2 = 10.5
+
+        println value2.getClass()
+        println value1 == value2
+
+        def value3 = value1 + value2
+        println value3.getClass()
+        println value3
+
+        value3 = value1 - value2
+        println value3
+
+        value3 = value1 * value2
+        println value3
+    }
 }
