@@ -534,4 +534,22 @@ class ExercisesTest {
         def invoice = new InvoiceForMOP()
         invoice.sell(20)
     }
+
+    @Test
+    void exerciseMOPExpandoMetaClassAddStaticMethodOnObject() {
+        def invoice = new InvoiceForMOP()
+        invoice.metaClass.static.sell = { println "Fatura no valor de $it" }
+        invoice.sell(20)
+
+        /**
+         * Lança uma exceção, porque o método estatico foi adicionado em outra instancia
+         */
+        // invoice = new InvoiceForMOP()
+        // invoice.sell(30)
+
+        /**
+         * Lança uma exceção, porque o método estatico não foi adicionado na classe
+         */
+        // InvoiceForMOP.sell(55.00)
+    }
 }
