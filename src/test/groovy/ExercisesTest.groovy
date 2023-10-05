@@ -14,6 +14,7 @@ import classes.closure.Fan
 import classes.closure.Report
 import classes.closure.Singer
 import classes.closure.Stage
+import classes.mop.Invoice as InvoiceForMOP
 import org.junit.Test
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 
@@ -463,5 +464,17 @@ class ExercisesTest {
         fan = gremio
         fan.jump()
         fan.scream("vai ")
+    }
+
+    @Test
+    void exerciseMOPExpandoMetaClassAddMethodOnObject() {
+        def invoice = new InvoiceForMOP()
+        // Lança exceção, porque o método ainda não existe
+        // invoice.sell(10.00)
+
+        // Adiciona o método dinâmicamente no objeto
+        invoice.metaClass.sell = { println "Venda no valor de $it" }
+        invoice.sell(10.00)
+        invoice.sell(1050.00)
     }
 }
