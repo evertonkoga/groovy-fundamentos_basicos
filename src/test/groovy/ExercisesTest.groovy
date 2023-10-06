@@ -686,4 +686,50 @@ class ExercisesTest {
         // Loop que inicia em 3 indo até 0
         3.downto(0) { println it }
     }
+
+    @Test
+    void exerciseGDKOverloadIO() {
+        // Valida e cria diretório caso não exista
+        String basePath = "D:/file_teste";
+        def directory = new File(basePath)
+        if(!directory.exists()){
+            println "Diretório $directory.path, criado com sucesso"
+            directory.mkdir()
+        }
+
+        // Criar e escrever arquivo
+        new FileWriter("$basePath/file1.txt")
+                .withWriter {it.write("Everton Koga")}
+
+        // Criar e escrever arquivo
+        new File("$basePath/file2.txt").write("Outro teste")
+
+        // Criar arquivo
+        def file = new File("$basePath/file3.txt")
+        // Adicionar texto
+        file.text = "Linha 1"
+        // Adicionar 5 linhas de texto
+        3.times {file << "\r\nnova linha usando sobrecarga de operador" }
+
+        // Leitura de todas as linhas através da propriedade
+        println file.text
+        // Leitura de todas as linhas com spread operator e convertido para caixa alta
+        println file.readLines()*.toUpperCase()
+        // Leitura de todas as linhas com eachLine
+        file.eachLine {println it}
+
+        // Leitura do diretório
+        new File(basePath).eachFile {println it.name }
+
+        // Deletando um arquivo específico
+        if(file.exists()) {
+            println "Arquivo $file.path apagado"
+            file.delete()
+        }
+        // Deletando um diretório específico
+        if (directory.exists()) {
+            println "Diretório $directory.path apagado"
+            directory.deleteDir()
+        }
+    }
 }
