@@ -33,6 +33,12 @@
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-swing</artifactId>
+            <version>${groovy}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-sql</artifactId>
             <version>${groovy}</version>
         </dependency>
