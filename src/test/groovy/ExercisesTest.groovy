@@ -841,4 +841,34 @@ class ExercisesTest {
         def employees = clients.collect({ new Employee(name: it.name) })
         println employees
     }
+
+    @Test
+    void exerciseGDKOverloadMap() {
+        def map = [:]
+        println map.getClass().name
+        // Preenchendo Map com chave/valor
+        map["pai"] = "Everton"
+        map["mae"] = "Ariadne"
+        println map
+
+        // Obtendo valor pela chave
+        println map["pai"]
+        println map["mae"]
+
+        // Removendo item no Map
+        map.remove("pai")
+        println map
+
+        // Crinado Map através de construtor
+        def pessoas = ["pais": 1, "maes": 9, "filhos": 10]
+        println pessoas
+
+        // Imprimindo valores do Map
+        println "-----> Valores"
+        pessoas.values().each { println it }
+
+        // Imprimindo Keys do Map
+        println "-----> Keys"
+        pessoas.keySet().each { println it }
+    }
 }
