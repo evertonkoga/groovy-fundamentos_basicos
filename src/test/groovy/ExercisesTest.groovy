@@ -16,7 +16,13 @@ import classes.closure.Singer
 import classes.closure.Stage
 import classes.mop.Invoice as InvoiceForMOP
 import classes.mop.Travel
+import groovy.sql.DataSet
+import groovy.sql.Sql
 import org.junit.Test
+
+import java.nio.file.Path
+import java.nio.file.Paths
+
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
 import static java.util.Calendar.*
 
@@ -731,5 +737,40 @@ class ExercisesTest {
             println "Diretório $directory.path apagado"
             directory.deleteDir()
         }
+    }
+
+    @Test
+    void exerciseGDKOverloadJDBC() {
+        // Obter o caminho absoluto do database
+        String basePath = Paths.get("").toAbsolutePath().toString()
+        String databasePath = "$basePath\\database\\hsqldb\\base"
+
+        // Create connection com database
+        Sql connection = Sql.newInstance(
+                "jdbc:hsqldb:file:$databasePath;shutdown=true",
+                "sa",
+                "1234"
+        )
+
+        String queryAllCliente = "select * from cliente"
+        def closureReturnClient = { println "${it.id} - ${it.nome} - ${it.email}" }
+
+        // Retorna todos os clientes
+        connection.eachRow(queryAllCliente, closureReturnClient)
+
+        // Retorna todos os clientes em memória
+        def list = connection.rows(queryAllCliente)
+        list.each {println it.email }
+
+        // Salva um cliente com comando SQL
+        connection.executeInsert("insert into cliente(nome, email) values('Koga', 'koga@teste.com.br')")
+        println "\nInserindo..."
+        connection.eachRow(queryAllCliente, closureReturnClient)
+
+        // Salva um cliente com DataSet sem utilizar SQL
+        DataSet table = connection.dataSet("cliente")
+        table.add(nome: "Everton", email:"everton@teste.com.br")
+        println "\nInserindo..."
+        connection.eachRow(queryAllCliente) { println it.nome }
     }
 }
