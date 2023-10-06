@@ -21,7 +21,6 @@ import groovy.sql.Sql
 import groovy.xml.MarkupBuilder
 import org.junit.Test
 
-import java.nio.file.Path
 import java.nio.file.Paths
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
@@ -745,6 +744,8 @@ class ExercisesTest {
         // Obter o caminho absoluto do database
         String basePath = Paths.get("").toAbsolutePath().toString()
         String databasePath = "$basePath\\database\\hsqldb\\base"
+
+        println databasePath
 
         // Create connection com database
         Sql connection = Sql.newInstance(

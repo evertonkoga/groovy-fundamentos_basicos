@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK Object Graph Builder HTML">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK Object Graph Swing Builder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SwingBuilders">
+  <component name="RunManager" selected="Groovy.Script">
     <configuration name="SwingBuilders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.gdk.SwingBuilders" />
       <module name="groovy-fundamentos_basicos" />
@@ -74,21 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Script" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="groovy-fundamentos_basicos" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/exercises/Script.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy/exercises" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercisesTest.exerciseGDKObjectGraphBuilderHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <option name="METHOD_NAME" value="exerciseGDKObjectGraphBuilderHtml" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseGDKOverloadCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKOverloadCollection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Groovy.Script" />
+        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadJDBC" />
         <item itemvalue="Application.SwingBuilders" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKObjectGraphBuilderHtml" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadMap" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadCollection" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadJDBC" />
       </list>
     </recent_temporary>
   </component>
@@ -133,13 +134,6 @@
       <option name="presentableId" value="Default" />
       <updated>1696347412770</updated>
       <workItem from="1696347413431" duration="3656000" />
-    </task>
-    <task id="LOCAL-00008" summary="created test for operator 'as'">
-      <created>1696364577553</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1696364577553</updated>
     </task>
     <task id="LOCAL-00009" summary="created test for optional parameters">
       <created>1696365209310</created>
@@ -477,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696613851799</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="create test for GDK Object Graph Swing Builder">
+      <created>1696614618301</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1696614618301</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Closure  method with closure params" />
     <MESSAGE value="created test for Closure  method omitting closure param when last parameter" />
     <MESSAGE value="created test for Closure  method omitting parameter of closure" />
     <MESSAGE value="created test for Closure  method implementing interface funcional" />
@@ -520,6 +520,7 @@
     <MESSAGE value="create test for GDK overload Collection" />
     <MESSAGE value="create test for GDK overload Map" />
     <MESSAGE value="create test for GDK Object Graph Builder HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK Object Graph Builder HTML" />
+    <MESSAGE value="create test for GDK Object Graph Swing Builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK Object Graph Swing Builder" />
   </component>
 </project>
