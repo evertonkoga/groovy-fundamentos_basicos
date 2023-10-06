@@ -1,4 +1,4 @@
-package classes.gdk
+package exercises.gdk
 
 import groovy.swing.SwingBuilder
 

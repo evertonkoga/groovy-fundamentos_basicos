@@ -1,4 +1,4 @@
-package classes.gdk
+package exercises.gdk
 
 class Thread {
     static main(args) {

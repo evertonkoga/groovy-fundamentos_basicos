@@ -1,8 +1,6 @@
 import classes.Client
-import classes.Connection
 import classes.DynamicDef
 import classes.Employee
-import classes.Food
 import classes.Invoice
 import classes.Math
 import classes.ProductInJava
@@ -10,26 +8,14 @@ import classes.ClientInJava as ClientJ
 import classes.Client as ClientG
 import classes.Sale
 import classes.Ticket
-import classes.closure.Fan
-import classes.closure.Report
-import classes.closure.Singer
-import classes.closure.Stage
-import classes.mop.Invoice as InvoiceForMOP
-import classes.mop.Travel
-import groovy.sql.DataSet
-import groovy.sql.Sql
-import groovy.xml.MarkupBuilder
 import org.junit.Test
 
-import java.nio.file.Paths
-
 import static javax.swing.JFrame.EXIT_ON_CLOSE as EXIT_ON_CLOSE
-import static java.util.Calendar.*
 
 class ExercisesTest {
 
     @Test
-    void exercisePrimitiveTypeLiteral() {
+    void primitiveTypeLiteral() {
         int number = 10
         println number.toString()
 
@@ -49,7 +35,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exercisePOGO() {
+    void pogo() {
         Client cliente = new Client()
         cliente.setName "Everton Koga"
         cliente.setCreateAt new Date()
@@ -59,7 +45,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseConstructorNamesArguments() {
+    void constructorNamesArguments() {
         Client client = new Client();
         println client.getName() + " - " + client.getCreateAt()
 
@@ -74,7 +60,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseSubscriptOperator() {
+    void subscriptOperator() {
         Client client = new Client(name: "Everton", createAt: new Date())
         println client.getName()
 
@@ -85,7 +71,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseDirectFieldAcessOperator() {
+    void directFieldAcessOperator() {
         ProductInJava product = new ProductInJava("chocolate", 20.00d)
         println product.name
         println product.name = "bean"
@@ -95,7 +81,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOperatorAs() {
+    void operatorAs() {
         ClientJ java = new ClientJ("koga", new Date())
         println java.name + " - " + java.createAt
 
@@ -106,14 +92,14 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOptionalParameters() {
+    void optionalParameters() {
         Sale sale = new Sale()
         println sale.sell(40.0)
         println sale.sell(40.0, 20)
     }
 
     @Test
-    void exerciseArrayOptionalParameters() {
+    void arrayOptionalParameters() {
         Math math = new Math()
         println math.sum(10)
         println math.sum(10, 10)
@@ -121,7 +107,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseSafeNavegatorOperator() {
+    void safeNavegatorOperator() {
         Client client = null
         // Em Java
         /** if(client != null) {
@@ -139,7 +125,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseSpreadOperator() {
+    void spreadOperator() {
         List<String> lista = Arrays.asList(
                 "Everton",
                 "Fabiano",
@@ -163,7 +149,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseCheckedExceptions() {
+    void checkedExceptions() {
         // Em Java
         /**
          try {
@@ -184,7 +170,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseBooleanAvaluation() {
+    void booleanAvaluation() {
         String name = null
         println getMessage("name", name)
 
@@ -218,7 +204,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOperatorOverloading() {
+    void operatorOverloading() {
         Invoice invoice1 = new Invoice(itens: 20, price: 2)
         Invoice invoice2 = new Invoice(itens: 20, price: 2)
         Invoice invoice3 = invoice1 + invoice2
@@ -229,7 +215,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOperatorOverloadingOfBigDecimal() {
+    void operatorOverloadingOfBigDecimal() {
         // Em Java
         /**
          BigDecimal price = new BigDecimal(10)
@@ -252,65 +238,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseATSTransformationToString() {
-        Employee employee = new Employee(name: "koga", age: 35, wage: 1000)
-        println employee
-    }
-
-    @Test
-    void exerciseATSTransformationEqualsAndHashCode() {
-        Employee employee1 = new Employee(name: "koga", age: 35, wage: 1000)
-        Employee employee2 = new Employee(name: "koga", age: 35, wage: 5000)
-        println employee1.equals(employee2)
-        println employee2.equals(employee1)
-    }
-
-    @Test
-    void exerciseATSTransformationImmutable() {
-        Ticket ticket1 = new Ticket(client: "Koga", number: 1)
-        Ticket ticket2 = new Ticket(client: "Koga", number: 1)
-        // Call getters
-        println ticket1.client + " - " + ticket1.number
-        // Call toString
-        println ticket1
-        // Call EqualsAndHashCode
-        println ticket1.equals(ticket2)
-        println ticket2.equals(ticket1)
-        // Call setters - but generete an exception
-        /** ticket1.number = 20 **/
-    }
-
-    @Test
-    void exerciseATSTransformationSingleton() {
-        Connection.instance.url = "https://google.com"
-        println Connection.instance.url
-
-        Connection connection = Connection.instance
-        connection.url = "https://gmail.com"
-        println Connection.instance.url
-
-        // Gera erro
-        /**
-         Connection c = new Connection()
-         println c
-         **/
-    }
-
-    @Test
-    void exerciseATSTransformationBuilder() {
-        Food food = Food.builder()
-                .fruit("banana")
-                .candy("chocolate")
-                .drink("water")
-                .build()
-
-        println food.drink
-        println food.fruit
-        println food.candy
-    }
-
-    @Test
-    void exerciseOperatorDef() {
+    void operatorDef() {
         def object = "koga"
         println object.getClass()
 
@@ -331,7 +259,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOperatorDynamicDef() {
+    void operatorDynamicDef() {
         def object = new DynamicDef()
         def value = object.call("koga_")
         println value.getClass()
@@ -351,7 +279,7 @@ class ExercisesTest {
     }
 
     @Test
-    void exerciseOperatorForIn() {
+    void operatorForIn() {
         def list = new ArrayList<String>()
         list.add("Everton")
         list.add("Koga")
@@ -379,514 +307,5 @@ class ExercisesTest {
             println item.getClass()
             println item
         }
-    }
-
-    @Test
-    void exerciseClosureSimpleMethod() {
-        def method = { int value1, int value2 -> value1 + value2 }
-        println method(1, 2)
-        println method(2, 3)
-    }
-
-    @Test
-    void exerciseClosureElaborateMethod() {
-        def print = { String value ->
-            String temp = value.trim().replace("a","@")
-            temp.toUpperCase()
-        }
-
-        println print(" Koga ")
-        println print("fabiano")
-    }
-
-    @Test
-    void exerciseClosureMethodWithDynamicParams() {
-        def method = { param1, param2 -> param1 + param2 }
-        def result = method(5, 5)
-        println result.class
-        println result
-
-        result = method( "ko", "ga")
-        println result.class
-        println result
-
-        result = method( 10.5, 9.5)
-        println result.class
-        println result
-    }
-
-    @Test
-    void exerciseClosureMethodWithClosureParams() {
-        def clean = { text ->
-            text.trim().replace("a","@").replace(" ","").capitalize()
-        }
-        def report = new Report()
-        report.emit(" Koga ", clean)
-    }
-
-    @Test
-    void exerciseClosureMethodOmittingClosureParamWhenLastParameter() {
-        def report = new Report()
-        report.emit(" Everton "){ param -> "$param koga" }
-        report.emit(" koga "){ param -> param.replace("a", "@") }
-    }
-
-    @Test
-    void exerciseClosureMethodOmittingParameterOfClosure() {
-        def report = new Report()
-        report.emit("Everton") { "$it Fabiano Koga" }
-        report.emit("everton") { it.reverse() }
-    }
-
-    @Test
-    void exerciseClosureMethodImplementingInterfaceFuncional() {
-        Stage stage = new Stage()
-        Singer singer
-
-        def implementation = { println "Vou cantar" }
-        singer = implementation
-        singer.sing()
-        stage.show(singer)
-
-        singer = { println "Estou cantando" }
-        singer.sing()
-
-        stage.show({ println "Parei de cantar" })
-    }
-
-    @Test
-    void exerciseClosureMethodImplementingInterfaceNotFuncionalWithManyMethods() {
-        Fan fan
-        def santos = [
-                jump: { println "Os santistas estão pulando" },
-                scream: { println "$it santos" }
-        ] as Fan
-        fan = santos
-        fan.jump()
-        fan.scream("vai ")
-
-        def gremio = [
-                jump: { println "Os gremistas estão pulando" },
-                scream: { println "$it gremio" }
-        ] as Fan
-        fan = gremio
-        fan.jump()
-        fan.scream("vai ")
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddMethodOnObject() {
-        def invoice = new InvoiceForMOP()
-        // Lança exceção, porque o método ainda não existe
-        // invoice.sell(10.00)
-
-        // Adiciona o método dinâmicamente no objeto
-        invoice.metaClass.sell = { println "Venda no valor de $it" }
-        invoice.sell(10.00)
-        invoice.sell(1050.00)
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddMethodOnClass() {
-        def invoice = new InvoiceForMOP()
-        // Lança exceção, porque o método ainda não existe
-        // invoice.sell(10.00)
-
-        // Adiciona o método dinâmicamente na classe
-        InvoiceForMOP.metaClass.sell = { println "Fatura no valor de $it" }
-
-        invoice = new InvoiceForMOP()
-        invoice.sell(20)
-
-        invoice = new InvoiceForMOP()
-        invoice.sell(55.00)
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddAttributeOnObject() {
-        def invoice = new InvoiceForMOP()
-        // Lança exceção, porque o atributo ainda não existe
-        // invoice.client = "Koga"
-
-        // Adiciona o atributo dinâmicamente no objeto
-        invoice.metaClass.client = "Koga"
-        println invoice.client
-
-        // Atribuido novo valor ao atributo
-        invoice.client = "Everton"
-        println invoice.client
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddAttributeOnClass() {
-        def invoice = new InvoiceForMOP()
-        // Lança exceção, porque o atributo ainda não existe
-        // invoice.client = "Koga"
-
-        // Adiciona o atributo dinâmicamente na classe
-        InvoiceForMOP.metaClass.client = null
-        invoice = new InvoiceForMOP()
-        invoice.client = "Koga"
-        println invoice.client
-
-        // Atribuido novo valor ao atributo
-        invoice.client = "Everton"
-        println invoice.client
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddStaticMethodOnClass() {
-        InvoiceForMOP.metaClass.static.sell = { println "Fatura no valor de $it" }
-        InvoiceForMOP.sell(55.00)
-
-        def invoice = new InvoiceForMOP()
-        invoice.sell(20)
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassAddStaticMethodOnObject() {
-        def invoice = new InvoiceForMOP()
-        invoice.metaClass.static.sell = { println "Fatura no valor de $it" }
-        invoice.sell(20)
-
-        /**
-         * Lança uma exceção, porque o método estatico foi adicionado em outra instancia
-         */
-        // invoice = new InvoiceForMOP()
-        // invoice.sell(30)
-
-        /**
-         * Lança uma exceção, porque o método estatico não foi adicionado na classe
-         */
-        // InvoiceForMOP.sell(55.00)
-    }
-
-    @Test
-    void exerciseMOPExpandoMetaClassOverrideMethod() {
-        String expectedDestination = "Londrina"
-        BigDecimal expectedPrice = 9.99
-
-        Travel travel = new Travel()
-        travel.travel(expectedDestination, expectedPrice)
-
-        // Para fazer o override é necessário adicionar a tipagem no(s) parametros
-        def newMethod = { String destination, BigDecimal price ->
-            price += 3.5
-            println "Novo valor para $destination será $price"
-        }
-        travel.metaClass.travel = newMethod
-        travel.travel(expectedDestination, expectedPrice)
-    }
-
-    @Test
-    void exerciseMOPExpandoDynamicBean() {
-        Expando client = new Expando()
-        client.name = "Koga"
-        client.age = 35
-        client.show = { println "Nome $name idade é $age" }
-        client.show()
-
-        Expando book = new Expando(author: "koga", page: 10)
-        println book.author
-        println book.page
-    }
-
-    @Test
-    void exerciseGDKOverloadBigDecimal() {
-        def value1 = new BigDecimal(10.5)
-        def value2 = 10.5
-
-        println value2.getClass()
-        println value1 == value2
-
-        def value3 = value1 + value2
-        println value3.getClass()
-        println value3
-
-        value3 = value1 - value2
-        println value3
-
-        value3 = value1 * value2
-        println value3
-    }
-
-    @Test
-    void exerciseGDKOverloadString() {
-        // Comparação
-        def text1 = "koga"
-        def text2 = "koga"
-        println text1 == text2
-
-        // Sobrecarga do operador (-)
-        def newText = text1 - "ga"
-        println newText
-
-        // Novos métodos + closures
-        String fullName = "everton koga"
-        println fullName.capitalize()
-        println fullName.findIndexOf {it == "e"}
-
-        // Multiline
-        String largeText = '''
-        My text
-        is very large
-        and not need add + to concact
-        '''
-        println largeText
-
-        // Interporlação de string e evitar utilizar (+)
-        def name = "koga"
-        def age = 35
-        def wage = 1000.52
-        def sql = "insert into cliente(name, age, wage) values($name, $age, $wage)"
-        println sql
-    }
-
-    @Test
-    void exerciseGDKOverloadDate() {
-        def date1 = new Date()
-        println date1
-
-        date1[YEAR] = 2010
-        date1[MONTH] = 8
-        date1[DATE] = 16
-        println date1
-
-        def date2 = new Date()
-        date2[YEAR] = 2015
-        date2[MONTH] = DECEMBER
-        date2[DATE] = 25
-        println date2
-
-        if (date2 >= date1)
-            println "a data 2 é maior"
-
-        Date date = new Date()
-        println date
-
-        // Adiciona 1 dia
-        date += 1
-        println date
-        // Subtrai 2 dia
-        date -= 2
-        println date
-
-        // Adiciona 1 dia
-        date++
-        println date
-
-        // Subtrai 1 dia
-        date--
-        println date
-
-        // Formata data
-        println date.format("dd/MM/yyyy hh:mm:ss")
-    }
-
-    @Test
-    void exerciseGDKOverloadInteger() {
-        // Loop que inicia de 0 até 9
-        10.times { println it }
-        // Loop que inicia em 5 indo até 10
-        5.upto(10) { println it }
-        // Loop que inicia em 3 indo até 0
-        3.downto(0) { println it }
-    }
-
-    @Test
-    void exerciseGDKOverloadIO() {
-        // Valida e cria diretório caso não exista
-        String basePath = "D:/file_teste";
-        def directory = new File(basePath)
-        if(!directory.exists()){
-            println "Diretório $directory.path, criado com sucesso"
-            directory.mkdir()
-        }
-
-        // Criar e escrever arquivo
-        new FileWriter("$basePath/file1.txt")
-                .withWriter {it.write("Everton Koga")}
-
-        // Criar e escrever arquivo
-        new File("$basePath/file2.txt").write("Outro teste")
-
-        // Criar arquivo
-        def file = new File("$basePath/file3.txt")
-        // Adicionar texto
-        file.text = "Linha 1"
-        // Adicionar 5 linhas de texto
-        3.times {file << "\r\nnova linha usando sobrecarga de operador" }
-
-        // Leitura de todas as linhas através da propriedade
-        println file.text
-        // Leitura de todas as linhas com spread operator e convertido para caixa alta
-        println file.readLines()*.toUpperCase()
-        // Leitura de todas as linhas com eachLine
-        file.eachLine {println it}
-
-        // Leitura do diretório
-        new File(basePath).eachFile {println it.name }
-
-        // Deletando um arquivo específico
-        if(file.exists()) {
-            println "Arquivo $file.path apagado"
-            file.delete()
-        }
-        // Deletando um diretório específico
-        if (directory.exists()) {
-            println "Diretório $directory.path apagado"
-            directory.deleteDir()
-        }
-    }
-
-    @Test
-    void exerciseGDKOverloadJDBC() {
-        // Obter o caminho absoluto do database
-        String basePath = Paths.get("").toAbsolutePath().toString()
-        String databasePath = "$basePath\\database\\hsqldb\\base"
-
-        println databasePath
-
-        // Create connection com database
-        Sql connection = Sql.newInstance(
-                "jdbc:hsqldb:file:$databasePath;shutdown=true",
-                "sa",
-                "1234"
-        )
-
-        String queryAllCliente = "select * from cliente"
-        def closureReturnClient = { println "${it.id} - ${it.nome} - ${it.email}" }
-
-        // Retorna todos os clientes
-        connection.eachRow(queryAllCliente, closureReturnClient)
-
-        // Retorna todos os clientes em memória
-        def list = connection.rows(queryAllCliente)
-        list.each {println it.email }
-
-        // Salva um cliente com comando SQL
-        connection.executeInsert("insert into cliente(nome, email) values('Koga', 'koga@teste.com.br')")
-        println "\nInserindo..."
-        connection.eachRow(queryAllCliente, closureReturnClient)
-
-        // Salva um cliente com DataSet sem utilizar SQL
-        DataSet table = connection.dataSet("cliente")
-        table.add(nome: "Everton", email:"everton@teste.com.br")
-        println "\nInserindo..."
-        connection.eachRow(queryAllCliente) { println it.nome }
-    }
-
-    @Test
-    void exerciseGDKOverloadCollection() {
-        // Em Java
-        // List<String> list = new ArrayList();
-
-        // Em Groovy
-        def list1 = [1,2,3,4]
-        println list1.getClass().name
-
-        def list2 = [ "Everton", "Fabiano", "Koga" ]
-        println list2.getClass().name
-
-        def list3 = new ArrayList<BigDecimal>()
-        // Add em Java
-        list3.add(1.50)
-        // Add em Groovy, utilizando operador sobrecarregado
-        list3 << 10.50
-        list3 << 5.5
-
-        // Iterar toda lista
-        list3.each { println it }
-
-        def total = 0
-        list3.each { total += it }
-        println "Total: $total"
-
-        // Add lista de Client
-        def clients = []
-        clients << new ClientG(name: "Everton", createAt: new Date())
-        clients << new ClientG(name: "Tatu", createAt: new Date())
-        clients << new ClientG(name: "Fabiano", createAt: new Date())
-        clients << new ClientG(name: "Koga", createAt: new Date())
-
-        // Obtem o primeiro cliente que contaim 'a'
-        def result = clients.find { it.name.contains("a") }
-        println result
-
-        // Obtem totos os clientes que contaim 'a'
-        result = clients.findAll { it.name.contains("a") }
-        println result
-
-        // Reordena lista pelo nome desc
-        clients.sort {client1, client2 -> client2.name.compareTo(client1.name)}
-        println clients
-
-        // Converte para Set
-        def clientSet = clients as Set
-        println clientSet.getClass().name
-        // Lista os itens do Set
-        clientSet.each { println it}
-
-        // Converte para List
-        def clientList = clientSet as List
-        println clientList.getClass().name
-
-        // Transforma o List e Set em imutável
-        def listImmutable = clientList.asImmutable()
-        def setImmutable = clientSet.asImmutable()
-
-        // Transforma o List e Set em sincronizado
-        def listSynchronized = clientList.asSynchronized()
-        def setSynchronized = clientSet.asSynchronized()
-
-        // Transforma um lista de client em uma lista de employee
-        def employees = clients.collect({ new Employee(name: it.name) })
-        println employees
-    }
-
-    @Test
-    void exerciseGDKOverloadMap() {
-        def map = [:]
-        println map.getClass().name
-        // Preenchendo Map com chave/valor
-        map["pai"] = "Everton"
-        map["mae"] = "Ariadne"
-        println map
-
-        // Obtendo valor pela chave
-        println map["pai"]
-        println map["mae"]
-
-        // Removendo item no Map
-        map.remove("pai")
-        println map
-
-        // Crinado Map através de construtor
-        def pessoas = ["pais": 1, "maes": 9, "filhos": 10]
-        println pessoas
-
-        // Imprimindo valores do Map
-        println "-----> Valores"
-        pessoas.values().each { println it }
-
-        // Imprimindo Keys do Map
-        println "-----> Keys"
-        pessoas.keySet().each { println it }
-    }
-
-    @Test
-    void exerciseGDKObjectGraphBuilderHtml() {
-        def writer = new StringWriter()
-        def html = new MarkupBuilder(writer)
-        html.html {
-            head { title "Minha Página" }
-            body(id: "main") {
-                h1 "Título"
-                p "Primeiro paragrafo"
-                p { strong "Texto em negrito" }
-                a href: "http://google.com","Clique aqui"
-            }
-        }
-        println writer
     }
 }

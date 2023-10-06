@@ -1,4 +1,4 @@
-package classes.closure
+package exercises.closure
 
 import javax.swing.JButton
 import javax.swing.JFrame

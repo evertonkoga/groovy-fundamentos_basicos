@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK Object Graph Swing Builder">
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test run scripts">
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesATSTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesClosureTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesGDKTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesMOPExpandoTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/closure/Screen.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/exercises/closure/Screen.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/gdk/SwingBuilders.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/exercises/gdk/SwingBuilders.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/gdk/Thread.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/exercises/gdk/Thread.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,69 +66,63 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Groovy.Script">
-    <configuration name="SwingBuilders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.gdk.SwingBuilders" />
+  <component name="RunManager" selected="JUnit.ExercisesClosureTest">
+    <configuration name="ExercisesATSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.gdk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesATSTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Script" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+    <configuration name="ExercisesClosureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/main/groovy/exercises/Script.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/main/groovy/exercises" />
-      <setting name="debug" value="false" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesClosureTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseGDKObjectGraphBuilderHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesGDKTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesGDKTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesMOPExpandoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesMOPExpandoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKObjectGraphBuilderHtml" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseGDKOverloadJDBC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKOverloadJDBC" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExercisesTest.exerciseGDKOverloadMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKOverloadMap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Groovy.Script" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadJDBC" />
-        <item itemvalue="Application.SwingBuilders" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKObjectGraphBuilderHtml" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadMap" />
+        <item itemvalue="JUnit.ExercisesClosureTest" />
+        <item itemvalue="JUnit.ExercisesATSTest" />
+        <item itemvalue="JUnit.ExercisesMOPExpandoTest" />
+        <item itemvalue="JUnit.ExercisesGDKTest" />
+        <item itemvalue="JUnit.ExercisesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -134,13 +135,6 @@
       <option name="presentableId" value="Default" />
       <updated>1696347412770</updated>
       <workItem from="1696347413431" duration="3656000" />
-    </task>
-    <task id="LOCAL-00009" summary="created test for optional parameters">
-      <created>1696365209310</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1696365209310</updated>
     </task>
     <task id="LOCAL-00010" summary="created test for array optional parameters">
       <created>1696417964179</created>
@@ -478,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696614618301</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="create test run scripts">
+      <created>1696618554764</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1696618554764</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Closure  method omitting closure param when last parameter" />
     <MESSAGE value="created test for Closure  method omitting parameter of closure" />
     <MESSAGE value="created test for Closure  method implementing interface funcional" />
     <MESSAGE value="created test for Closure  method implementing interface not funcional with many methods" />
@@ -521,6 +521,7 @@
     <MESSAGE value="create test for GDK overload Map" />
     <MESSAGE value="create test for GDK Object Graph Builder HTML" />
     <MESSAGE value="create test for GDK Object Graph Swing Builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK Object Graph Swing Builder" />
+    <MESSAGE value="create test run scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test run scripts" />
   </component>
 </project>
