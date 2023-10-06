@@ -18,6 +18,7 @@ import classes.mop.Invoice as InvoiceForMOP
 import classes.mop.Travel
 import groovy.sql.DataSet
 import groovy.sql.Sql
+import groovy.xml.MarkupBuilder
 import org.junit.Test
 
 import java.nio.file.Path
@@ -870,5 +871,21 @@ class ExercisesTest {
         // Imprimindo Keys do Map
         println "-----> Keys"
         pessoas.keySet().each { println it }
+    }
+
+    @Test
+    void exerciseGDKObjectGraphBuilderHtml() {
+        def writer = new StringWriter()
+        def html = new MarkupBuilder(writer)
+        html.html {
+            head { title "Minha Página" }
+            body(id: "main") {
+                h1 "Título"
+                p "Primeiro paragrafo"
+                p { strong "Texto em negrito" }
+                a href: "http://google.com","Clique aqui"
+            }
+        }
+        println writer
     }
 }
