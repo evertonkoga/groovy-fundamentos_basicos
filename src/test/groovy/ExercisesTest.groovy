@@ -773,4 +773,72 @@ class ExercisesTest {
         println "\nInserindo..."
         connection.eachRow(queryAllCliente) { println it.nome }
     }
+
+    @Test
+    void exerciseGDKOverloadCollection() {
+        // Em Java
+        // List<String> list = new ArrayList();
+
+        // Em Groovy
+        def list1 = [1,2,3,4]
+        println list1.getClass().name
+
+        def list2 = [ "Everton", "Fabiano", "Koga" ]
+        println list2.getClass().name
+
+        def list3 = new ArrayList<BigDecimal>()
+        // Add em Java
+        list3.add(1.50)
+        // Add em Groovy, utilizando operador sobrecarregado
+        list3 << 10.50
+        list3 << 5.5
+
+        // Iterar toda lista
+        list3.each { println it }
+
+        def total = 0
+        list3.each { total += it }
+        println "Total: $total"
+
+        // Add lista de Client
+        def clients = []
+        clients << new ClientG(name: "Everton", createAt: new Date())
+        clients << new ClientG(name: "Tatu", createAt: new Date())
+        clients << new ClientG(name: "Fabiano", createAt: new Date())
+        clients << new ClientG(name: "Koga", createAt: new Date())
+
+        // Obtem o primeiro cliente que contaim 'a'
+        def result = clients.find { it.name.contains("a") }
+        println result
+
+        // Obtem totos os clientes que contaim 'a'
+        result = clients.findAll { it.name.contains("a") }
+        println result
+
+        // Reordena lista pelo nome desc
+        clients.sort {client1, client2 -> client2.name.compareTo(client1.name)}
+        println clients
+
+        // Converte para Set
+        def clientSet = clients as Set
+        println clientSet.getClass().name
+        // Lista os itens do Set
+        clientSet.each { println it}
+
+        // Converte para List
+        def clientList = clientSet as List
+        println clientList.getClass().name
+
+        // Transforma o List e Set em imutável
+        def listImmutable = clientList.asImmutable()
+        def setImmutable = clientSet.asImmutable()
+
+        // Transforma o List e Set em sincronizado
+        def listSynchronized = clientList.asSynchronized()
+        def setSynchronized = clientSet.asSynchronized()
+
+        // Transforma um lista de client em uma lista de employee
+        def employees = clients.collect({ new Employee(name: it.name) })
+        println employees
+    }
 }

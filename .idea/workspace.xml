@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK overload Threads">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="19a00e0c-b7bf-43e8-b9d2-b340cf54b967" name="Changes" comment="create test for GDK overload JDBC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/classes/Client.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/classes/Client.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/ExercisesTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <recent name="D:\workspace\estudos\groovy-fundamentos_basicos\src\main\groovy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseGDKOverloadJDBC">
+  <component name="RunManager" selected="JUnit.ExercisesTest.exerciseGDKOverloadCollection">
     <configuration name="ExercisesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
       <module name="groovy-fundamentos_basicos" />
@@ -92,6 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExercisesTest.exerciseGDKOverloadCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groovy-fundamentos_basicos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
+      <option name="METHOD_NAME" value="exerciseGDKOverloadCollection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExercisesTest.exerciseGDKOverloadJDBC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groovy-fundamentos_basicos" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,23 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExercisesTest.exerciseGDKOverloadThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groovy-fundamentos_basicos" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExercisesTest" />
-      <option name="METHOD_NAME" value="exerciseGDKOverloadThread" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadCollection" />
         <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadJDBC" />
         <item itemvalue="JUnit.ExercisesTest" />
         <item itemvalue="Application.Thread" />
         <item itemvalue="Application.ExercisesTest" />
-        <item itemvalue="JUnit.ExercisesTest.exerciseGDKOverloadThread" />
       </list>
     </recent_temporary>
   </component>
@@ -131,13 +130,6 @@
       <option name="presentableId" value="Default" />
       <updated>1696347412770</updated>
       <workItem from="1696347413431" duration="3656000" />
-    </task>
-    <task id="LOCAL-00004" summary="created test for constructor names arguments">
-      <created>1696362313489</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1696362313489</updated>
     </task>
     <task id="LOCAL-00005" summary="created test for subscript operator">
       <created>1696362355356</created>
@@ -475,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696593431082</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="create test for GDK overload JDBC">
+      <created>1696602883157</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1696602883157</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created test for Operator for-in" />
     <MESSAGE value="created test for Closure simple method" />
     <MESSAGE value="created test for Closure elaborate method" />
     <MESSAGE value="created test for Closure  method with dynamic params" />
@@ -518,6 +516,7 @@
     <MESSAGE value="create test for GDK overload Integer" />
     <MESSAGE value="create test for GDK overload I/O" />
     <MESSAGE value="create test for GDK overload Threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK overload Threads" />
+    <MESSAGE value="create test for GDK overload JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test for GDK overload JDBC" />
   </component>
 </project>
