@@ -3,6 +3,6 @@
 > [!NOTE]
 > Link dos cursos:
 >
-> https://www.udemy.com/course/groovy-f1
+> [Groovy F1](https://www.udemy.com/course/groovy-f1)
 > 
-> https://www.udemy.com/course/groovy-f2
+> [Groovy F2](https://www.udemy.com/course/groovy-f2)
